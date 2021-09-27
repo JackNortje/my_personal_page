@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: #00000e;
+}
+
+.main-nav {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+  z-index: 100;
+  position: fixed;
+  background-color: #00000e;
+}
+
+.main-nav:hover {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(150, 150, 150, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(150, 150, 150, 0.2);
+}
+
+h3 {
+  font-size: 40px;
+  font-family: serif;
+  color: #e5e5dc;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  h3 .square {
+    -webkit-animation: wipe-enter 1s infinite;
+            animation: wipe-enter 1s infinite;
+  }
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-list li {
+  font-size: 15px;
+  list-style: none;
+  margin-left: 30px;
+  color: #edff64;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #e5e5dc;
+}
+
+.nav-list li a:hover {
+  cursor: pointer;
+  color: #edff64;
+}
+
+a.nav-btn {
+  height: 50px;
+  width: 110px;
+  border-radius: 10px;
+  background-color: #00000e;
+  border: 3px #edff64 solid;
+  color: #edff64;
+  margin-right: 60px;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+a.nav-btn:hover {
+  cursor: pointer;
+  color: #e5e5dc;
+}
+
+.socials {
+  margin-top: 100px;
+  width: 7%;
+  float: left;
+  bottom: 50;
+  position: fixed;
+}
+
+.socials li {
+  list-style: none;
+}
+
+.socials img {
+  height: 25px;
+  width: 25px;
+  margin-top: 40px;
+}
+
+.socials img:hover {
+  -webkit-transform: 10s;
+          transform: 10s;
+  width: 30px;
+  height: 30px;
+}
+
+.intro-text {
+  margin-left: 200px;
+  margin-top: 410px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e5e5dc;
+  position: absolute;
+}
+
+.intro {
+  height: 100vh;
+  background-color: #00000e;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro h1 {
+  font-weight: 350;
+}
+
+.intro h2 {
+  font-size: 85px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: -30px;
+}
+
+.intro h3 {
+  color: #e5e5dc;
+  font-weight: 500;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.intro .info-p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.intro .github-projects {
+  height: 50px;
+  width: 110px;
+  border-radius: 10px;
+  background-color: #00000e;
+  border: 3px #edff64 solid;
+  color: #edff64;
+  padding: 20px;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.intro .github-projects:hover {
+  cursor: pointer;
+  background-color: #edff64;
+  color: black;
+}
+
+p {
+  color: #e5e5dc;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 750px;
+  width: 850px;
+  margin-left: 150px;
+  margin-top: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e5e5dc;
+  background-color: #00000e;
+}
+
+.about .text {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00000e;
+}
+
+.about .portPic {
+  margin-left: 50px;
+  margin-right: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about .aboutMe {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.about p {
+  height: auto;
+  font-size: 20px;
+  width: 820px;
+  color: #e5e5dc;
+}
+
+.about ul {
+  font-size: 20px;
+}
+
+.picture {
+  height: 500px;
+  width: 755px;
+  margin-left: 100px;
+}
+
+.contact ul {
+  color: white;
+}
+
+.contact .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.contact .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.contact .tab button:hover {
+  background-color: #ddd;
+}
+
+.contact .tab button.active {
+  background-color: #ccc;
+}
+
+.contact .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the buttons inside the tab */
+/* Change background color of buttons on hover */
+/* Create an active/current tablink class */
+/* Style the tab content */
+/*# sourceMappingURL=style.css.map */
