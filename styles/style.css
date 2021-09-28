@@ -91,31 +91,6 @@ a.nav-btn:hover {
   color: #e5e5dc;
 }
 
-.socials {
-  margin-top: 100px;
-  width: 7%;
-  float: left;
-  bottom: 50;
-  position: fixed;
-}
-
-.socials li {
-  list-style: none;
-}
-
-.socials img {
-  height: 25px;
-  width: 25px;
-  margin-top: 40px;
-}
-
-.socials img:hover {
-  -webkit-transform: 10s;
-          transform: 10s;
-  width: 30px;
-  height: 30px;
-}
-
 .intro-text {
   margin-left: 200px;
   margin-top: 410px;
@@ -180,6 +155,40 @@ a.nav-btn:hover {
   color: black;
 }
 
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+  padding: 0;
+  bottom: 50;
+  position: fixed;
+}
+
+.socials li {
+  list-style: none;
+}
+
+.socials img {
+  height: 25px;
+  width: 25px;
+  margin-top: 40px;
+}
+
+.socials img:hover {
+  -webkit-transform: 10s;
+          transform: 10s;
+  width: 30px;
+  height: 30px;
+}
+
 p {
   color: #e5e5dc;
 }
@@ -193,51 +202,51 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 750px;
-  width: 850px;
-  margin-left: 150px;
-  margin-top: 150px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 150px auto;
   color: #e5e5dc;
   background-color: #00000e;
 }
 
-.about .text {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #00000e;
-}
-
-.about .portPic {
-  margin-left: 50px;
-  margin-right: auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.about .aboutMe {
+.about .text .aboutMe {
   font-size: 40px;
   font-weight: 500;
 }
 
-.about p {
+.about .text p {
   height: auto;
   font-size: 20px;
   width: 820px;
   color: #e5e5dc;
 }
 
-.about ul {
+.about .text ul {
   font-size: 20px;
 }
 
-.picture {
+.about .portPic {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about .portPic .picture {
   height: 500px;
   width: 755px;
-  margin-left: 100px;
+}
+
+.contact {
+  margin-left: 300px;
+}
+
+.contact h2 {
+  color: snow;
 }
 
 .contact ul {
@@ -246,12 +255,13 @@ section {
 
 .contact .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  width: 470px;
+  color: #edff64;
+  border: 1px solid #edff64;
 }
 
 .contact .tab button {
-  background-color: inherit;
+  color: #edff64;
   float: left;
   border: none;
   outline: none;
@@ -262,18 +272,18 @@ section {
   font-size: 17px;
 }
 
-.contact .tab button:hover {
-  background-color: #ddd;
+.contact .tablinks {
+  background-color: #00000e;
 }
 
-.contact .tab button.active {
-  background-color: #ccc;
+.contact .tablinks:hover {
+  background-color: #edff64;
+  color: #00000e;
 }
 
 .contact .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
